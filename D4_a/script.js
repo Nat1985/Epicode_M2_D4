@@ -96,25 +96,20 @@ let array = [];
 let randomNumber;
 let numberOk = true;
 for (i = 0; i < 10; i++) {
-  randomNumber = (Math.round(Math.random() * 100));
-
+  randomNumber = (Math.round(Math.random() * 10));
   for (n = 0; n < array.length; n++) {
     if (randomNumber !== array[n]) {
       numberOk = true;
     } else {
       numberOk = false;
-      console.log("NUMERO DOPPIO ELIMINATO: " + randomNumber);
-      console.log("Sarebbe stato all'index: " + i);
       break;
     }
   }
-
   if (numberOk) {
     array.push(randomNumber);
   } else {
     i --
   }
-  
 }
 
 console.log(array);
