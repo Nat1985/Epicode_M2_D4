@@ -42,7 +42,7 @@ console.log(randomArray); */
 
 /* let array = [3, 4, 6, 1, 8, 9, 10, 11, 10];
 let evenArray = [];
-for (let i = 0; i < 9; i++) {
+for (let i = 0; i < array.length; i++) {
   if (!(array[i] % 2)) {
     evenArray.push(array[i]);
   }
@@ -54,17 +54,71 @@ console.log(evenArray); */
   Scrivi del codice per sommare a catena i numeri contenuti in un array.
  */
 
+/* let array = [3, 5, 6, 2, 7, 1, 8];
+let amount = 0;
+for (let i = 0; i < array.length; i++) {
+  amount += array[i];
+}
+
+console.log(amount); */
+
 /* ESERCIZIO 6
   Scrivi del codice per incrementare di 1 tutti i valori numerici in un array.
 */
+
+/* let array = [3, 5, 2, 7, 10, 45, 21, 2];
+for (i = 0; i < array.length; i++) {
+  array[i]++;
+}
+
+console.log(array); */
+
 
 /* ESERCIZIO 7 (EXTRA)
   Scrivi del codice per eliminare solo i valori PARI da un array.
 */
 
+/* let array = [3, 6, 7, 2, 4, 78, 54, 23];
+for (i = 0; i < array.length; i++) {
+  if (!(array[i] % 2)) {
+    array.splice(i, 1);
+    i--
+  }
+}
+
+console.log(array); */
+
 /* ESERCIZIO 8
   Scrivi del codice per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
+
+let array = [];
+let randomNumber;
+let numberOk = true;
+for (i = 0; i < 10; i++) {
+  randomNumber = (Math.round(Math.random() * 100));
+
+  for (n = 0; n < array.length; n++) {
+    if (randomNumber !== array[n]) {
+      numberOk = true;
+    } else {
+      numberOk = false;
+      console.log("NUMERO DOPPIO ELIMINATO: " + randomNumber);
+      console.log("Sarebbe stato all'index: " + i);
+      break;
+    }
+  }
+
+  if (numberOk) {
+    array.push(randomNumber);
+  } else {
+    i --
+  }
+  
+}
+
+console.log(array);
+
 
 /* ESERCIZIO 9
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
