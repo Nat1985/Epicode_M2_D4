@@ -8,6 +8,9 @@ const me = {
   skills: ['javascript', 'html', 'css'],
 }
 
+let meNew = me[2][2].pop(2);
+console.log(meNew);
+
 /* ESERCIZIO 2
   Scrivi del codice per creare un array di soli valori DISPARI da 1 a 100.
  */
@@ -51,7 +54,7 @@ const me = {
 */
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
-const movies = [
+/* const movies = [
   {
     Title: 'The Lord of the Rings: The Fellowship of the Ring',
     Year: '2001',
@@ -164,7 +167,7 @@ const movies = [
     Poster:
       'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
   },
-]
+] */
 
 /* ESERCIZIO 12
   Scrivi del codice per trovare il film più vecchio nell'array fornito.
