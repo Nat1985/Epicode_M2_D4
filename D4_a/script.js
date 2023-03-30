@@ -16,10 +16,10 @@ console.log(me); */
   Scrivi del codice per creare un array di soli valori DISPARI da 1 a 100.
  */
 
-/* let array = [];
-for(let i = 0; i <= 100; i++) {
-  if((i % 2)) {
-    array.push(i);
+/* let oddArray = [];
+for (let i = 0; i <= 100; i++) {
+  if ((i % 2)) {
+    oddArray.push(i);
   }
 }
 
@@ -30,7 +30,7 @@ console.log(array); */
  */
 
 /* let randomArray = [];
-for(let i = 0; i <= 10; i++) {
+for (let i = 0; i <= 10; i++) {
   randomArray.push(Math.round(Math.random() * 100));
 }
 
@@ -40,7 +40,15 @@ console.log(randomArray); */
   Scrivi del codice per ricavare solamente i valori PARI da un array composto da soli valori numerici.
  */
 
+/* let array = [3, 4, 6, 1, 8, 9, 10, 11, 10];
+let evenArray = [];
+for (let i = 0; i < 9; i++) {
+  if (!(array[i] % 2)) {
+    evenArray.push(array[i]);
+  }
+}
 
+console.log(evenArray); */
 
 /* ESERCIZIO 5
   Scrivi del codice per sommare a catena i numeri contenuti in un array.
