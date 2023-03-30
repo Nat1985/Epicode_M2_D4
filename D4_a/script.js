@@ -82,7 +82,7 @@ console.log(array); */
 for (i = 0; i < array.length; i++) {
   if (!(array[i] % 2)) {
     array.splice(i, 1);
-    i--
+    i--;
   }
 }
 
@@ -92,7 +92,7 @@ console.log(array); */
   Scrivi del codice per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
 
-let array = [];
+/* let array = [];
 let randomNumber;
 let numberOk = true;
 for (i = 0; i < 10; i++) {
@@ -108,11 +108,11 @@ for (i = 0; i < 10; i++) {
   if (numberOk) {
     array.push(randomNumber);
   } else {
-    i --
+    i--;
   }
 }
 
-console.log(array);
+console.log(array); */
 
 
 /* ESERCIZIO 9
@@ -120,17 +120,49 @@ console.log(array);
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+/* let wordsArray = ["Pippo", "Topolino", "Paperino", "Zio Paperone", "Qui", "Quo"];
+let lettersAmount;
+for (i = 0; i < wordsArray.length; i++) {
+  lettersAmount = wordsArray[i].length;
+  wordsArray[i] = lettersAmount;
+}
+
+console.log(wordsArray); */
+
 /* ESERCIZIO 10
   Scrivi un algoritmo in grado di invertire un array.
   es: [1, 3, 5] ==> [5, 3, 1]
 */
 
+/* let array = [1, 2, 3, 4, 5, 6, 7];
+let lastNumber;
+let n = 0;
+for (i = array.length; i > 0; i--) {
+  lastNumber = array.pop();
+  array.splice(n, 0, lastNumber);
+  n++;
+}
+
+console.log(array); */
+
 /* ESERCIZIO 11
   Scrivi del codice per estrarre il massimo valore numerico da un array.
 */
 
+let array = [3, 56, 8, 230];
+let greater = 0;
+for (i = 0; i < array.length; i++) {
+  if (array[1] > greater) {
+    console.log("True col " + array[i]);
+    greater = array[i];
+  }
+}   /* TO FIX */
+
+console.log(greater);
+
+
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
-/* const movies = [
+const movies = [
   {
     Title: 'The Lord of the Rings: The Fellowship of the Ring',
     Year: '2001',
@@ -243,7 +275,7 @@ console.log(array);
     Poster:
       'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
   },
-] */
+]
 
 /* ESERCIZIO 12
   Scrivi del codice per trovare il film più vecchio nell'array fornito.
