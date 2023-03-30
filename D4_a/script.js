@@ -2,26 +2,45 @@
   Fornito il seguente oggetto, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-const me = {
+/* const me = {
   name: 'Joh',
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
 }
 
-let meNew = me[2][2].pop(2);
-console.log(meNew);
+me.skills.pop();
+console.log(me); */
+
 
 /* ESERCIZIO 2
   Scrivi del codice per creare un array di soli valori DISPARI da 1 a 100.
  */
 
+/* let array = [];
+for(let i = 0; i <= 100; i++) {
+  if((i % 2)) {
+    array.push(i);
+  }
+}
+
+console.log(array); */
+
 /* ESERCIZIO 3
   Scrivi del codice per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
  */
 
+/* let randomArray = [];
+for(let i = 0; i <= 10; i++) {
+  randomArray.push(Math.round(Math.random() * 100));
+}
+
+console.log(randomArray); */
+
 /* ESERCIZIO 4
   Scrivi del codice per ricavare solamente i valori PARI da un array composto da soli valori numerici.
  */
+
+
 
 /* ESERCIZIO 5
   Scrivi del codice per sommare a catena i numeri contenuti in un array.
