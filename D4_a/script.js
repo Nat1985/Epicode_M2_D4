@@ -7,7 +7,6 @@
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
 }
-
 me.skills.pop();
 console.log(me); */
 
@@ -22,8 +21,7 @@ for (let i = 0; i <= 100; i++) {
     oddArray.push(i);
   }
 }
-
-console.log(array); */
+console.log(oddArray); */
 
 /* ESERCIZIO 3
   Scrivi del codice per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
@@ -33,7 +31,6 @@ console.log(array); */
 for (let i = 0; i <= 10; i++) {
   randomArray.push(Math.round(Math.random() * 100));
 }
-
 console.log(randomArray); */
 
 /* ESERCIZIO 4
@@ -47,19 +44,17 @@ for (let i = 0; i < array.length; i++) {
     evenArray.push(array[i]);
   }
 }
-
 console.log(evenArray); */
 
 /* ESERCIZIO 5
   Scrivi del codice per sommare a catena i numeri contenuti in un array.
  */
 
-/* let array = [3, 5, 6, 2, 7, 1, 8];
+/* let array = [3, 5, 6, 2, 7, 1, 9];
 let amount = 0;
 for (let i = 0; i < array.length; i++) {
   amount += array[i];
 }
-
 console.log(amount); */
 
 /* ESERCIZIO 6
@@ -70,7 +65,6 @@ console.log(amount); */
 for (i = 0; i < array.length; i++) {
   array[i]++;
 }
-
 console.log(array); */
 
 
@@ -85,7 +79,6 @@ for (i = 0; i < array.length; i++) {
     i--;
   }
 }
-
 console.log(array); */
 
 /* ESERCIZIO 8
@@ -111,7 +104,6 @@ for (i = 0; i < 10; i++) {
     i--;
   }
 }
-
 console.log(array); */
 
 
@@ -149,16 +141,16 @@ console.log(array); */
   Scrivi del codice per estrarre il massimo valore numerico da un array.
 */
 
-let array = [3, 56, 8, 230];
+/* let array = [3, 56, 8, 230];
 let greater = 0;
 for (i = 0; i < array.length; i++) {
   if (array[1] > greater) {
     console.log("True col " + array[i]);
     greater = array[i];
   }
-}   /* TO FIX */
+}  TO FIX
 
-console.log(greater);
+console.log(greater); */
 
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
@@ -281,13 +273,29 @@ const movies = [
   Scrivi del codice per trovare il film più vecchio nell'array fornito.
 */
 
+/* let older = ["", 2023];
+for (i = 0; i < movies.length; i++) {
+  yearNumber = parseInt(movies[i].Year);
+  if (yearNumber < older[1]) {
+    older[0] = (movies[i].Title);
+    older[1] = yearNumber;
+
+  }
+}
+console.log("Il film più veccho è " + older[0] + ", del " + older[1]); */
+
+
 /* ESERCIZIO 13
   Scrivi del codice per ottenere il numero di film contenuti nell'array fornito.
 */
 
+/* console.log("Nell'array ci sono " + movies.length + " film."); */
+
 /* ESERCIZIO 14
   Scrivi del codice per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+
+TO DO
 
 /* ESERCIZIO 15
   Scrivi del codice per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
