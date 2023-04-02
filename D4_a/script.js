@@ -295,21 +295,52 @@ console.log("Il film più veccho è " + older[0] + ", del " + older[1]); */
   Scrivi del codice per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
-TO DO
+/* let titleArray = [];
+for(i = 0; i < movies.length; i++) {
+  titleArray.push(movies[i].Title);
+  console.log(titleArray[i]);
+} */
 
 /* ESERCIZIO 15
   Scrivi del codice per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+
+/* console.log("I film uscito nel millenio corrente sono:")
+for(i = 0; i < movies.length; i++) {
+  if(movies[i].Year >= 2000) {
+    console.log(movies[i].Title + ", uscito nel " + movies[i].Year);
+  }
+} */
 
 /* ESERCIZIO 16
   Scrivi del codice per ottenere dall'array fornito il film con il seguente id.
 */
 const id = 'tt0355702'
 
+/* console.log("Il film col codice tt0355702 é:");
+for (i = 0; i < movies.length; i++) {
+  if (movies[i].imdbID === "tt0355702") {
+    console.log(movies[i].Title);
+  }
+} */
+
 /* ESERCIZIO 17
   Scrivi del codice per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
+/* let yearsSum = 0;
+for (i = 0; i < movies.length; i++) {
+  yearsSum += parseInt(movies[i].Year);
+}
+console.log("La somma totale degli anni è: " + yearsSum); */
+
+
 /* ESERCIZIO 18
   Scrivi del codice per recuperare tutti i film dall'array fornito che contengono una parola fornita.
 */
+
+/* for (i = 0; i < movies.length; i++) {
+  if (movies[i].Title.includes("Lord")) {
+    console.log(movies[i].Title);
+  }
+} */
