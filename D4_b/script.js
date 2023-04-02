@@ -31,3 +31,11 @@ const amy = {
 
 const prices = [34, 5, 2]
 const shippingCost = 50
+
+let user = marco;
+let pricesSum = 0;
+for (i = 0; i < prices.length; i++) {
+  pricesSum += prices[i];
+}
+console.log("Costo totale dei prodotti acquistati: " + pricesSum + "€");
+
