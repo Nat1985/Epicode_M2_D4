@@ -29,13 +29,30 @@ const amy = {
   isAmbassador: false,
 }
 
-const prices = [34, 5, 2]
+const prices = [34, 5, 2, 67]
 const shippingCost = 50
 
-let user = marco;
+
 let pricesSum = 0;
 for (i = 0; i < prices.length; i++) {
   pricesSum += prices[i];
 }
 console.log("Costo totale dei prodotti acquistati: " + pricesSum + "€");
 
+let totalWithDiscount;
+if (marco.isAmbassador) { /* cambio marco con paul o amy per verificare i tre diversi casi */
+  totalWithDiscount = pricesSum * 0.7;
+  console.log("Totale con sconto Ambassador: " + totalWithDiscount + "€");
+} else {
+  totalWithDiscount = pricesSum;
+  console.log("(l'utente non è ambassador)");
+}
+
+let totalWithShipping;
+if (totalWithDiscount <= 100) {
+  console.log("Costo spedizione: " + shippingCost + "€");
+  totalWithShipping = totalWithDiscount + shippingCost
+  console.log("Totale con la spedizione: " + totalWithShipping + "€")
+} else {
+  console.log("Totale superiore a 100€ la spedizione è gratuita");
+}
